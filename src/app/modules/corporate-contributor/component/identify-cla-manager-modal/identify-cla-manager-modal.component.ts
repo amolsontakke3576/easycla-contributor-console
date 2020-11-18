@@ -128,7 +128,7 @@ export class IdentifyClaManagerModalComponent implements OnInit {
           if (exception.status === 400) {
             // user already assigned cla-manager
             this.hasError = false;
-            this.title = '';
+            this.title = 'Already a CLA Manager';
             this.message = 'This user is already a CLA Manager for this organization and project. Please contact them to process your CLA Request.';
             this.openDialogModal();
           } else {
